@@ -11,6 +11,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void multiplicarPorTresVariable( int *pdata);
+
+
 int main(void) {
 
 	int variable = 10;
@@ -20,12 +23,22 @@ int main(void) {
 
 	int *pvariable = &variable;
 
-
 	*pvariable = 30;
 
 	printf("variable = %d\n", variable);
 
+	multiplicarPorTresVariable(&variable);
 
+	printf("variable = %d\n", variable);
 
 	return EXIT_SUCCESS;
 }
+
+void multiplicarPorTresVariable( int *pdata){
+
+	// *pdata == variable
+	*pdata = (*pdata) * 3;
+}
+
+
+
