@@ -15,7 +15,15 @@ int main(void) {
 
 	int variable = 10;
 
-	printf("variable = %d", variable);
+	printf("variable = %d\n", variable);
+
+
+	int *pvariable = &variable;
+
+
+	*pvariable = 30;
+
+	printf("variable = %d\n", variable);
 
 
 
