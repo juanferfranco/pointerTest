@@ -13,8 +13,9 @@
 
 int main(void) {
 
+	int variable = 10;
 
-
+	printf("variable = %d", variable);
 
 
 
