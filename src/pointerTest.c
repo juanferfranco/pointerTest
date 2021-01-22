@@ -31,6 +31,8 @@ int main(void) {
 
 	printf("variable = %d\n", variable);
 
+	printf("variable = %d\n", variable*2);
+
 	return EXIT_SUCCESS;
 }
 
